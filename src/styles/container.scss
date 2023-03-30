@@ -1,0 +1,21 @@
+@import 'variables';
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+
+  @media (min-width: $bp-tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 800px;
+  }
+
+  @media (min-width: $bp-desktop-l) {
+    max-width: 1280px;
+  }
+}
