@@ -1,15 +1,20 @@
 import Link from "next/link";
 const navLinks = [
-  {label: 'Home', slug: '/'}
+  {label: 'Home', slug: '/'},
+  {label: 'About Me', slug: '/about-me'},
+  {label: 'Work', slug: '/work'},
+  {label: 'Technologies', slug: 'technologies'},
+  {label: 'Hobbies', slug: 'hobbies'},
+  {label: 'Contact', slug: 'contact'}
 ]
 
 const Nav = () => {
   return (
     <div className={'nav-wrap'}>
-      <nav className={`nav-main container`}>
+      <nav className={`nav-main`}>
         {navLinks.map((link, i) => {
           return (
-            <Link href={link.slug}>{link.label}</Link>
+            <Link className={'nav-main-link'} href={link.slug}>{link.label}</Link>
           )
         })}
       </nav>
