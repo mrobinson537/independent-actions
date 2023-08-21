@@ -1,0 +1,30 @@
+
+
+.form {
+  margin-top: 15px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+}
+
+input {
+  //border: 0;
+  padding: 2.5px 5px;
+}
+
+textarea {
+  padding: 2.5px 5px;
+}
+
+.flex-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-wrap {
+    width: 45%;
+  }
+}

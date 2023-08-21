@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh);
+  flex-wrap: wrap;
 
   .copy-max-width {
     max-width: 600px;

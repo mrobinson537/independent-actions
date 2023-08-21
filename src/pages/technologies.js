@@ -1,5 +1,63 @@
 import Head from 'next/head'
 
+const myTech = [
+  {
+    category: 'Frontend',
+    tech: [
+      {name: 'React'},
+      {name: 'NextJS'},
+      {name: 'Angular'},
+      {name: 'jQuery'},
+      {name: 'NodeJS'},
+      {name: 'Typescript'},
+      {name: 'Google App Script'},
+      {name: 'NPM'},
+      {name: 'Webpack'},
+      {name: 'Gulp, Grunt'},
+      {name: 'CSS, SCSS, LESS'},
+    ]
+  },
+  {
+    category: 'Backend',
+    tech: [
+      {name: 'PHP'},
+      {name: 'SQL'},
+      {name: 'Google BigQuery'},
+      {name: 'Elasticsearch'}
+    ]
+  },
+  {
+    category: 'CMS',
+    tech: [
+      {name: 'Contentful'},
+      {name: 'Silverstripe'},
+      {name: 'Magento'},
+      {name: 'Drupal'},
+      {name: 'Wordpress'},
+      {name: 'Squarespace'},
+      {name: 'Shopify'},
+      {name: 'AEM'},
+    ]
+  },
+  {
+    category: 'Web Services',
+    tech: [
+      {name: 'AWS'},
+      {name: 'Netlify'},
+      {name: 'Heroku'}
+    ]
+  },
+  {
+    category: 'Design Programs',
+    tech: [
+      {name: 'Photoshop'},
+      {name: 'Sketch'},
+      {name: 'Abstract'},
+      {name: 'Figma'}
+    ]
+  }
+]
+
 export default function Technologies() {
   return (
     <>
@@ -10,17 +68,27 @@ export default function Technologies() {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <main>
-        <div className="container-flex-full">
-          <div className={`copy-max-width`}>
-            <h1>Tech</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-              {`</>`}
-            </p>
+        <div className="">
+          <div className={`container`}>
+            <div className="named-list-wrap">
+              <h1 className={"main-title"}>Tech</h1>
+              <p>Some of the web tech that I have worked with over the years.</p>
+
+              {myTech.map((item, key) => {
+                return (
+                  <div key={key} className="named-list">
+                    <h3 className="named-list-title">{item.category}</h3>
+                    <ul>
+                      {item.tech.map((tech, key2) => {
+                        return (
+                          <li key={key2}>{tech.name}</li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </main>

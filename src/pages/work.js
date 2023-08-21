@@ -2,10 +2,17 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 const myWork = [
-  {label: 'Logitech', url: 'www.logitechg.com', description: 'For the past couple of years I helped build and maintain the Logitech Websites. Primarily the Logitech G site.'},
+  {label: 'Logitech', url: 'www.logitech.com', description: 'Several e-commerce websites focused on selling consumer electronics.', urls: [
+    {url: 'www.logitech.com'},
+    {url: 'www.logitechg.com'},
+    {url: 'www.astrogaming.com'},
+    {url: 'www.ultimateears.com'},
+    {url: 'www.jaybirdsport.com'},
+  ]},
   {label: 'Ikon Pass', url: 'www.ikonpass.com', description: 'A marketing website built to sell ski passes to the masses. Built with React and Contentful.'},
   {label: 'CMH Heli Skiing', url: 'www.cmhheli.com/', description: 'A marketing website built to sell and book helicopter driven adventures. Built with React and Contentful.'},
   {label: 'EvansHunt', url: 'www.evanshunt.com', description: 'A marketing website built to showcase a digital agencies services. Built with React (NextJS) and Contentful.'},
+  {label: 'Live Out There', url: 'www.liveoutthere.com', description: 'An E-Commerce website focused on selling outdoor apparel and gear. Built with Magento, and utilized some Angular.'}
 ]
 
 export default function Work() {
@@ -23,10 +30,16 @@ export default function Work() {
             <h1>Work</h1>
             {myWork.map((item, i) => {
               return (
-                <div>
+                <div key={i}>
                   <h2>{item.label}</h2>
                   <p>{item.description}</p>
-                  <Link href={item.url}>{item.label}</Link>
+                  {item.urls && item.urls.map((url, k) => {
+                    return (
+                      <div key={k}>
+                        <Link href={url.url}>{url.label}</Link>
+                      </div>
+                    )
+                  })}
                 </div>
               )
             })}

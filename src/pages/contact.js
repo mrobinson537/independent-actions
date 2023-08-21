@@ -1,4 +1,11 @@
 import Head from 'next/head'
+import Form from "@/components/form/contact-form";
+
+const contactMethods = [
+  {name: 'Phone', value: 'Email me for my number please.'},
+  {name: 'Email', value: 'mrobinson537@live.ca'},
+  {name: 'LinkedIn', value: 'https://www.linkedin.com/in/mattrobinson537/'}
+]
 
 export default function Contact() {
   return (
@@ -13,14 +20,8 @@ export default function Contact() {
         <div className="container-flex-full">
           <div className={`copy-max-width`}>
             <h1>Contact</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-              {`</>`}
-            </p>
+            <p>You can find me on <a href={"https://www.linkedin.com/in/mattrobinson537/"}>LinkedIn</a> or you can fill out the form below to get in touch. Cheers!</p>
+            <Form />
           </div>
         </div>
       </main>

@@ -1,0 +1,46 @@
+// various "card" styles
+@import 'variables';
+
+.flex-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-bordered {
+    .flex-card {
+      border: 1px solid #e2e2e2;
+    }
+  }
+}
+
+.flex-card {
+  width: calc(100% - 15px);
+  padding: 15px;
+  margin: 15px;
+
+  // 2 across
+  @media (min-width: $bp-tablet) {
+    width: calc(50% - 30px);
+  }
+
+  // 3 across
+  @media (min-width: $bp-desktop-l) {
+    width: calc(33.33% - 30px);
+  }
+
+  // 4 across
+  //@media (min-width: $bp-desktop-l) {
+  //  width: calc(25% - 30px);
+  //}
+}
+
+.flex-card-img {
+  width: 100%;
+  display: block;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.flex-card-title {
+  margin-bottom: 5px;
+}
