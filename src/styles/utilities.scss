@@ -3,3 +3,9 @@
 .text-center {
   text-align: center;
 }
+
+.blue-pink {
+  color: transparent;
+  background-image: linear-gradient(to right, #0070f3, #ec008c)!important;
+  background-clip: text;
+}

@@ -5,7 +5,7 @@
 }
 
 input, textarea {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   display: block;
   width: 100%;
 }
@@ -26,5 +26,15 @@ textarea {
 
   &-wrap {
     width: 45%;
+  }
+}
+
+.input-wrap {
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 101%;
+    font-size: 14px;
   }
 }

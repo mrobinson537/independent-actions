@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh);
+  min-height: calc(100vh - $desktopFooterHeight - $desktopNavHeight);
   flex-wrap: wrap;
 
   .copy-max-width {
