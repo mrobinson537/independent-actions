@@ -15,7 +15,7 @@ export default function AboutMe() {
             <h1 className={"blue-pink"}>About Me</h1>
             <p>
               I started my web development journey back in 2013 when I made my first Wordpress site.
-              The idea was to build a website to sell products online and become a billionaire. As I was making this
+              The idea was to build a website to sell products online and become a millionaire. As I was making this
               happen I realized I needed to know a bit more about the coding side of things in order to make the
               site work how I wanted it to. That's when I decided I get some schooling in the subject and signed up
               for the fast track program at SAIT (Southern Alberta Institute of Technology). My practicum for the
