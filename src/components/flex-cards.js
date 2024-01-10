@@ -14,9 +14,9 @@ const FlexCards = ({myHobbies, bordered}) => {
             {/*<img className="flex-card-img" src="https://picsum.photos/380/200"/>*/}
             <Image className={"flex-card-img"} src={item.imgPath} alt={item.name} width={380} height={200} />
             <h4 className="flex-card-title">{item.name}</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.
-            </p>
+            {/*<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore*/}
+            {/*  et dolore magna aliqua.*/}
+            {/*</p>*/}
           </div>
         )
       })}
