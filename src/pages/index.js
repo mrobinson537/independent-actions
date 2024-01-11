@@ -13,8 +13,8 @@ export default function Home() {
         <div className="container-flex-full">
           <div className={`copy-max-width`}>
             <h1 className={"blue-pink"}>Hi, I'm Matt Robinson</h1>
-            <p>
-              Specialized in front-end development but I dabble in a bit of everything.
+            <p className={"text-center"}>
+              Web Developer specialized in front-end but I dabble in a bit of everything.
             </p>
             <p className={"text-center"}>{`</>`}</p>
           </div>

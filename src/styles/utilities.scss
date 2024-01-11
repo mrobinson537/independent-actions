@@ -1,4 +1,5 @@
 // convenient classes
+@import 'variables';
 
 .text-center {
   text-align: center;
@@ -8,4 +9,32 @@
   color: transparent;
   background-image: linear-gradient(to right, #0070f3, #ec008c)!important;
   background-clip: text;
+}
+
+.show-lg {
+  display: none;
+  @media (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+
+.hide-lg {
+  display: block;
+  @media (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.show-md {
+  display: none;
+  @media (min-width: $bp-tablet) {
+    display: block;
+  }
+}
+
+.hide-md {
+  display: block;
+  @media (min-width: $bp-tablet) {
+    display: none;
+  }
 }

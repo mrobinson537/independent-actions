@@ -23,8 +23,9 @@ export default function Hobbies() {
           <div className="container">
             <div>
               <h1 className={"text-center main-title blue-pink"}>Hobbies</h1>
+              <p className={"main-subtitle text-center"}>What I like to do outside of work.</p>
             </div>
-            <FlexCards myHobbies={myHobbies} bordered={false} />
+            <FlexCards myHobbies={myHobbies} bordered={false}/>
           </div>
         </div>
       </main>

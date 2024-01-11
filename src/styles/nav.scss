@@ -7,6 +7,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  justify-content: space-between;
 
   &-link {
     padding-left: 20px;
@@ -14,4 +15,56 @@
     color: black;
   }
 
+  &-links {
+    @media (max-width: $bp-desktop - 1) {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      padding-bottom: 20px;
+      width: 100%;
+      background: white;
+      border-bottom: 1px solid #e2e2e2;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      .nav-main-link {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}
+
+
+.menu-line {
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  display: block;
+}
+
+.menu-icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.mobile-menu-toggle {
+  background: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  @media (min-width: $bp-desktop) {
+    display: none;
+  }
+
+  &:hover {
+    background: none;
+  }
 }
