@@ -20,7 +20,8 @@ export default function Contact() {
         <div className="container-flex-full">
           <div className={`copy-max-width`}>
             <h1 className={"blue-pink"}>Contact</h1>
-            <p>You can find me on <a href={"https://www.linkedin.com/in/mattrobinson537/"}>LinkedIn</a> Cheers!</p>
+            <p className={"text-center"}>You can find me on <a href={"https://www.linkedin.com/in/mattrobinson537/"}>LinkedIn</a>.</p>
+            <p className={"text-center"}>Cheers!</p>
             {/*<Form />*/}
           </div>
         </div>

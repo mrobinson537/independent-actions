@@ -9,7 +9,7 @@ const myWork = [
     {label: 'Jaybird', url: '//www.jaybirdsport.com'},
     ],
     live: true},
-  {label: 'Ikon Pass', url: '//www.ikonpass.com', description: 'A marketing website built to sell ski passes to the masses. Built with React and Contentful.', live: true},
+  {label: 'Ikon Pass', url: '//www.ikonpass.com', description: 'A marketing website built to sell ski passes to the masses. Built with React, Redux, and Contentful.', live: true},
   {label: 'CMH Heli Skiing', url: '//www.cmhheli.com/', description: 'A marketing website built to sell and book helicopter driven adventures. Built with Vanilla JS and Contentful.', live: true},
   {label: 'EvansHunt', url: '//www.evanshunt.com', description: 'A marketing website built to showcase a digital agencies services. Built with React (NextJS) and Contentful.', live: true},
   {label: 'Live Out There', url: '//www.liveoutthere.com', description: 'An E-Commerce website focused on selling outdoor apparel and gear. Built with Magento, and utilized some Angular.', live: false}

@@ -2,8 +2,8 @@ import Head from 'next/head'
 import FlexCards from '@/components/flex-cards'
 
 const myHobbies = [
-  {name: 'Rock climbing', imgPath: '/img/rock-climbing.jpeg'},
-  {name: 'Ice climbing', imgPath: '/img/ice-climbing.jpeg'},
+  {name: 'Rock Climbing', imgPath: '/img/rock-climbing.jpeg'},
+  {name: 'Ice Climbing', imgPath: '/img/ice-climbing.jpeg'},
   {name: 'Mountaineering', imgPath: '/img/mountaineering.jpeg'},
   {name: 'Snowboarding', imgPath: '/img/snowboarding.jpeg'},
   {name: 'Backcountry Skiing', imgPath: '/img/bc-skiing.jpeg'}

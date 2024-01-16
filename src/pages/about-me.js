@@ -19,7 +19,7 @@ export default function AboutMe() {
               happen I realized I needed to know a bit more about the coding side of things in order to make the
               site work how I wanted it to. That's when I decided I get some schooling in the subject and signed up
               for the fast track program at SAIT (Southern Alberta Institute of Technology). My practicum for the
-              program led me to my first junior role as a dev and it was there that I fell in love with coding. And I've
+              program led me to my first junior role as a dev and it was there that I fell in love with coding. I've
               been working on websites ever since.
             </p>
             <p className={"text-center"}>{`</>`}</p>
