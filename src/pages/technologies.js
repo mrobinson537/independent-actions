@@ -55,7 +55,8 @@ const myTech = [
       {name: 'AWS'},
       {name: 'Netlify'},
       {name: 'Jenkins'},
-      {name: 'Heroku'}
+      {name: 'Heroku'},
+      {name: 'Beanstalk'}
     ]
   },
   {

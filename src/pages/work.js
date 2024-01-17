@@ -1,18 +1,46 @@
 import Head from 'next/head'
 
+
+// removing for now
+
 const myWork = [
-  {label: 'Logitech', url: '//www.logitech.com', description: 'Several e-commerce websites focused on selling consumer electronics.', urls: [
-    {label: 'Logitech', url: '//www.logitech.com'},
-    {label: 'Logitech Gaming', url: '//www.logitechg.com'},
-    {label: 'Astro', url: '//www.astrogaming.com'},
-    {label: 'Ultimate Ears', url: '//www.ultimateears.com'},
-    {label: 'Jaybird', url: '//www.jaybirdsport.com'},
+  {
+    label: 'Logitech',
+    url: '//www.logitech.com',
+    description: 'Several e-commerce websites focused on selling consumer electronics.',
+    urls: [
+      {label: 'Logitech', url: '//www.logitech.com'},
+      {label: 'Logitech Gaming', url: '//www.logitechg.com'},
+      {label: 'Astro', url: '//www.astrogaming.com'},
+      {label: 'Ultimate Ears', url: '//www.ultimateears.com'},
+      {label: 'Jaybird', url: '//www.jaybirdsport.com'},
     ],
-    live: true},
-  {label: 'Ikon Pass', url: '//www.ikonpass.com', description: 'A marketing website built to sell ski passes to the masses. Built with React, Redux, and Contentful.', live: true},
-  {label: 'CMH Heli Skiing', url: '//www.cmhheli.com/', description: 'A marketing website built to sell and book helicopter driven adventures. Built with Vanilla JS and Contentful.', live: true},
-  {label: 'EvansHunt', url: '//www.evanshunt.com', description: 'A marketing website built to showcase a digital agencies services. Built with React (NextJS) and Contentful.', live: true},
-  {label: 'Live Out There', url: '//www.liveoutthere.com', description: 'An E-Commerce website focused on selling outdoor apparel and gear. Built with Magento, and utilized some Angular.', live: false}
+    live: true
+  },
+  {
+    label: 'Ikon Pass',
+    url: '//www.ikonpass.com',
+    description: 'A marketing website built to sell ski passes to the masses. Built with React, Redux, and Contentful.',
+    live: true
+  },
+  {
+    label: 'CMH Heli Skiing',
+    url: '//www.cmhheli.com/',
+    description: 'A marketing website built to sell and book helicopter driven adventures. Built with Vanilla JS and Contentful.',
+    live: true
+  },
+  {
+    label: 'EvansHunt',
+    url: '//www.evanshunt.com',
+    description: 'A marketing website built to showcase a digital agencies services. Built with React (NextJS) and Contentful.',
+    live: true
+  },
+  {
+    label: 'Live Out There',
+    url: '//www.liveoutthere.com',
+    description: 'An E-Commerce website focused on selling outdoor apparel and gear. Built with Magento, and utilized some Angular.',
+    live: false
+  }
 ]
 
 export default function Work() {
@@ -38,12 +66,14 @@ export default function Work() {
                     {item.urls && item.urls.map((url, k) => {
                       return (
                         <div key={k} className={"link-list-item"}>
-                          <a href={url.url} rel="noopener noreferrer" title={url.label} target={"_blank"}>{url.label}</a>
+                          <a href={url.url} rel="noopener noreferrer" title={url.label}
+                             target={"_blank"}>{url.label}</a>
                         </div>
                       )
                     })}
                     {!item.urls && item.url && (
-                      <a href={item.url} title={item.label} target={"_blank"}>{item.label}{item.live === false ? ' (No longer live)' : ''}</a>
+                      <a href={item.url} title={item.label}
+                         target={"_blank"}>{item.label}{item.live === false ? ' (No longer live)' : ''}</a>
                     )}
                   </div>
                 </div>
