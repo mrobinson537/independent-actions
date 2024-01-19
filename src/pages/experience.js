@@ -75,7 +75,7 @@ export default function Experience() {
                       <div className="timeline-item-links">
                         {item.urls.map((url, i) => {
                           return (
-                            <div className="timeline-item-link" key={i}><Link href={url.url}>{url.label}</Link></div>
+                            <div className="timeline-item-link" key={i}><a href={url.url}>{url.label}</a></div>
                           )
                         })}
                       </div>
