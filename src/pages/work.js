@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-// removing for now
+// excluding for now
 
 const myWork = [
   {
@@ -38,7 +38,7 @@ const myWork = [
   {
     label: 'Live Out There',
     url: '//www.liveoutthere.com',
-    description: 'An E-Commerce website focused on selling outdoor apparel and gear. Built with Magento, and utilized some Angular.',
+    description: 'An E-Commerce website focused on selling outdoor apparel and gear. Built with Magento and utilized some Angular and React.',
     live: false
   }
 ]
